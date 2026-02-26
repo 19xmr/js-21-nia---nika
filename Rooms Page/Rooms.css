@@ -4,3 +4,39 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 5px black;
+    position: fixed;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-left: 400px;
+    align-items: center;
+}
+
+.navbar ul li {
+    font-weight: 600;
+    color: rgb(107,107,107);
+}
+
+.navbar ul li:hover {
+    transition: 0.3s;
+    color: rgb(117,197,207);
+    cursor: pointer;
+}
+
+.navbar ul img {
+    border-radius: 0 0 5px 5px;
+    background-image: url("Screenshot\ 2026-02-25\ 180727.png");
+    width: 40px;
+    height: 45px;
+    margin-right: 50px;
+    background-size: cover;
+}
