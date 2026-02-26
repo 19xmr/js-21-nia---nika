@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms Page</title>
+    <link rel="stylesheet" href="Rooms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <img>
+            <li><a href="Home.html" >Home</a></li>
+            <li><a href="Rooms.html" style="color: rgb(117,197,207);">Rooms</a></li>
+            <li><a href="Hotels.html">Hotels</a></li>
+            <li><a href="Booked.html">Booked Rooms</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+    
+        <div class="tabs">
+            <button class="active">All</button>
+            <button>Single Room</button>
+            <button>Double Room</button>
+            <button>Deluxe Room</button>
+        </div>
+    
+        <div class="filter-box">
+    
+            <div class="filter-group price">
+                <label>Price Per Night</label>
+                <input type="range" min="0" max="1000" value="0">
+                <div class="price-inputs">
+                    <input type="number" value="0">
+                    <input type="number" value="1000">
+                </div>
+            </div>
+    
+            <div class="filter-group">
+                <label>Room Type</label>
+                <select>
+                    <option>Select a room</option>
+                    <option>Single Room</option>
+                    <option>Double Room</option>
+                    <option>Deluxe Room</option>
+                </select>
+            </div>
+    
+            <div class="filter-group">
+                <label>Check-in</label>
+                <input type="date">
+            </div>
+    
+            <div class="filter-group">
+                <label>Check-out</label>
+                <input type="date">
+            </div>
+    
+            <div class="filter-group guests">
+                <label>Guests</label>
+                <input type="number" value="1" min="1">
+            </div>
+    
+            <div class="buttons">
+                <button class="apply">APPLY FILTER</button>
+                <button class="reset">RESET</button>
+            </div>
+    
+        </div>
+    </div>
+
+    <script src="Rooms.js"></script>
+</body>
+</html>

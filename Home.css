@@ -119,6 +119,7 @@ body{
 }
 
 .card {
+    width: 350px;
     height: 280px;
     box-shadow: 0 0 4px black;
     display: flex;
