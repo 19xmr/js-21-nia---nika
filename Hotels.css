@@ -12,6 +12,7 @@ body{
 .navbar {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 80px;
     box-shadow: 0 0 5px black;
@@ -25,49 +26,46 @@ body{
 .navbar ul {
     display: flex;
     list-style: none;
-    gap: 50px;
+    gap: 40px;
     align-items: center;
-    margin-left: 400px;
-}
-
-.navbar ul li {
-    font-weight: 600;
-    color: rgb(107,107,107);
-    transition: color 0.3s ease;
+    justify-content: center;
+    width: 100%;
+    padding: 0 5%;
+    flex-wrap: wrap;
 }
 
 .navbar ul li a {
     text-decoration: none;
     color: rgb(107,107,107);
-    transition: color 0.3s ease;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 .navbar ul li a:hover {
-    transition: 0.3s;
     color: rgb(117,197,207);
-    cursor: pointer;
 }
 
 .navbar ul img {
     border-radius: 0 0 5px 5px;
-    background-image: url("Screenshot\ 2026-02-25\ 180727.png");
+    background-image: url("Screenshot 2026-02-25 180727.png");
     width: 40px;
     height: 45px;
-    margin-right: 50px;
+    margin-right: 20px;
     background-size: cover;
 }
 
 .cardGrid {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
-    gap: 50px; 
-    margin-top: 80px;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin: 100px 5% 0 5%;
 }
 
 .card {
-    width: 350px;
-    height: 280px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    height: auto;
     box-shadow: 0 0 4px black;
     display: flex;
     flex-direction: column;
@@ -75,19 +73,18 @@ body{
 
 .card button {
     width: 100%;
-    height: 35px;
+    height: 40px;
     border: solid 2px darkcyan;
     background-color: rgb(159,220,226);
     color: white;
     font-weight: 700;
     font-size: large;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s;
 }
 
 .card button:hover {
     background-color: darkcyan;
-    transition: 0.3s;
 }
 
 .card .image {
@@ -99,9 +96,9 @@ body{
 }
 
 .card img {
+    width: 100%;
     height: 200px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
 }
 
 .card .info {
@@ -109,4 +106,16 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
 }

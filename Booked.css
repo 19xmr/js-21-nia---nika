@@ -5,13 +5,14 @@
     font-family: sans-serif;
 }
 
-body{
+body {
     padding-top: 80px;
 }
 
 .navbar {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 80px;
     box-shadow: 0 0 5px black;
@@ -19,48 +20,43 @@ body{
     top: 0;
     left: 0;
     background: white;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .navbar ul {
     display: flex;
     list-style: none;
-    gap: 50px;
+    gap: 40px;
     align-items: center;
-    margin-left: 400px;
-}
-
-.navbar ul li {
-    font-weight: 600;
-    color: rgb(107,107,107);
-    transition: color 0.3s ease;
+    justify-content: center;
+    width: 100%;
+    padding: 0 5%;
+    flex-wrap: wrap;
 }
 
 .navbar ul li a {
     text-decoration: none;
     color: rgb(107,107,107);
-    transition: color 0.3s ease;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 .navbar ul li a:hover {
-    transition: 0.3s;
     color: rgb(117,197,207);
-    cursor: pointer;
 }
 
 .navbar ul img {
     border-radius: 0 0 5px 5px;
-    background-image: url("Screenshot\ 2026-02-25\ 180727.png");
+    background-image: url("Screenshot 2026-02-25 180727.png");
     width: 40px;
     height: 45px;
-    margin-right: 50px;
     background-size: cover;
 }
 
 .table-container {
-    width: 85%;
-    margin: auto;
-    margin-top: 70px;
+    width: 95%;
+    margin: 100px auto 0 auto;
+    overflow-x: auto;
 }
 
 .table-header {
@@ -79,9 +75,33 @@ body{
     font-size: 14px;
     color: #333;
     border-bottom: 2px solid #dcdcdc;
+    min-width: 900px;
 }
 
 .table-header div {
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .table-header {
+        display: block;
+        min-width: unset;
+    }
+
+    .table-header div {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
 }
