@@ -1,23 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Reservation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Room Reservation</title>
+
+  <link rel="stylesheet" href="Reservation.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-            <img>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="Rooms.html">Rooms</a></li>
-            <li><a href="Hotels.html">Hotels</a></li>
-            <li><a href="Booked.html">Booked Rooms</a></li>
-        </ul>
+  <div class="navbar">
+    <ul>
+        <img>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Rooms.html">Rooms</a></li>
+      <li><a href="Hotels.html">Hotels</a></li>
+      <li><a href="Booked.html">Booked Rooms</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="image-section">
+      <img src="pic 2.avif" alt="Hotel Room">
     </div>
-
-    <script src="Reservation.js"></script>
+    <div class="reservation-card">
+      <h2 style="color: gray;">Reservation</h2>
+      <div class="room-price">
+        <span>Deluxe Twin Room</span>
+        <span class="price">€ 299,-</span>
+        <small>a night</small>
+      </div>
+      <form>
+        <label>Check-in</label>
+        <input type="date">
+        <label>Check-out</label>
+        <input type="date">
+        <label>Customer Name</label>
+        <input type="text" placeholder="Please enter your name">
+        <label>Customer Tel:Phone</label>
+        <input type="text" placeholder="Please enter your phone number">
+        <button type="submit">BOOK NOW</button>
+      </form>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="grid">
+      <section class="room-details">
+        <h2 class="section-title" style="color: gray;">Room Details</h2>
+        <h3>Table overview</h3>
+        <div class="features">
+          <div class="feature">✔ Double Bed</div>
+          <div class="feature">✔ Free Internet</div>
+          <div class="feature">✔ Free Newspaper</div>
+          <div class="feature">✔ 60 square meter</div>
+          <div class="feature">✔ Beach view</div>
+          <div class="feature">✔ 2 persons</div>
+          <div class="feature">✔ Breakfast included</div>
+          <div class="feature">✔ Flat Screen TV</div>
+          <div class="feature">✔ Jacuzzi</div>
+        </div>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nunc ligula nibh, cursus id euismod non.
+        </p>
+      </section>
+      <section class="overview">
+        <h2 class="section-title" style="color: gray;">Overview</h2>
+        <div class="tabs">
+          <span class="tab active">Overview</span>
+          <span class="tab">Facilities</span>
+          <span class="tab">Extra</span>
+        </div>
+        <div class="overview-content">
+          <div class="overview-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse interdum eleifend augue.
+            </p>
+            <p>
+              Donec pretium sem non tincidunt iaculis.
+            </p>
+          </div>
+          <div class="overview-image">
+            <img src="food.jpg" alt="Food">
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
